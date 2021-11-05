@@ -1,0 +1,16 @@
+.arrow {
+    width: 1em; 
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.icon {
+    width: 1.0634765625em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+    margin: 0 4px;
+}

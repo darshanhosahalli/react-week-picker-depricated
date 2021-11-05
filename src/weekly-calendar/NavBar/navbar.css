@@ -1,0 +1,10 @@
+.navbar {
+    width: 274px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    padding: 6px;
+    cursor: pointer;
+}
