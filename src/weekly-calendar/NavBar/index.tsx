@@ -6,12 +6,15 @@ import '../calendar.css';
 interface AppProps {
     month: string,
     year: string,
+    theme?: string,
+    onPreviousClick: () => void,
+    onNextClick: () => void
 }
 
 export const NavBar = (appProps: AppProps) => {
     return <div className="navbar">
                 <span className="item">
-                    <RightIcon/>
+                    <RightIcon onClick={appProps.onPreviousClick}/>
                 </span>
                 <div className="item font">
                     <span className="item">
@@ -22,7 +25,7 @@ export const NavBar = (appProps: AppProps) => {
                     </span>
                 </div>
                 <span className="item">
-                    <LeftIcon/>
+                    <LeftIcon onClick={appProps.onNextClick}/>
                 </span>
             </div>
 }

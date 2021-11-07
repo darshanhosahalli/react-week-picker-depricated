@@ -1,13 +1,21 @@
-.table {
-    display: flex;
-    flex-direction: row;
-}
-
 .row {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 274px;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-.item {
-    padding: 6px;
+.row td {
+    padding: 8px 5px 8px 5px;
+}
+
+.highlighted {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.unset-button {
+    all: unset;
 }

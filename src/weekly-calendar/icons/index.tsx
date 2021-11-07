@@ -1,14 +1,18 @@
 import React from 'react';
 import './icons.css';
 
-export const LeftIcon = () => {
-    return <svg className="arrow" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+interface Icon {
+    onClick: () => void
+}
+
+export const LeftIcon = (props: Icon) => {
+    return <svg onClick={props.onClick} className="arrow" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <path d="M682.666667 512l-256 256V256z"  />
         </svg>
 }
 
-export const RightIcon = () => {
-    return <svg className="arrow" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+export const RightIcon = (props: Icon) => {
+    return <svg onClick={props.onClick} className="arrow" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <path d="M341.333333 512l256-256v512z"  />
         </svg>
 }
