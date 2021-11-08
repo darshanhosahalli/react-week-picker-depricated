@@ -3,7 +3,7 @@ import moment from 'moment';
 import { Button } from './Button';
 import './calendar.css';
 import { CalendarIcon } from './icons';
-import Calendar from '../weekly-calendar/calendar';
+import Calendar from './calendar';
 import { RefObject } from 'react';
 
 interface AppState {

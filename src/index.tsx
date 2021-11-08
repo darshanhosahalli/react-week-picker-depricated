@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import WeeklyCalendar from './weekly-calendar';
+import WeeklyCalendar from './lib/weekly-calendar';
 
 interface AppProps {
   color?: string,
